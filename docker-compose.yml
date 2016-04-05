@@ -20,7 +20,7 @@ services:
             - default
 
     db:
-        image: loomchild/mongo
+        image: puffinrocks/mongo
         volumes: 
             - db_data_db:/data/db
             - db_data_configdb:/data/configdb
