@@ -14,6 +14,7 @@ services:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=3000
             - MAIL_URL=smtp://mail:25
+            - ROOT_URL=http://${VIRTUAL_HOST}
         networks:
             - front
             - back
