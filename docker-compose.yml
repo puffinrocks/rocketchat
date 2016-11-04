@@ -8,8 +8,6 @@ services:
             - db
         ports:
             - 3000
-        volumes: 
-            - main_data:/app/uploads
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=3000
@@ -19,6 +17,11 @@ services:
             - front
             - back
             - default
+        volumes:
+            - main_data:/app/uploads
+        tmpfs:
+            - /run
+            - /tmp
 
     db:
         image: puffinrocks/mongo
