@@ -3,7 +3,7 @@ version: '2'
 services:
 
     main:
-        image: rocket.chat:latest
+        image: rocket.chat:0.50.1
         depends_on:
             - db
         ports:
@@ -11,6 +11,7 @@ services:
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=3000
+            - VERSION=0.50.1
             - MAIL_URL=smtp://mail:25
             - ROOT_URL=http://${VIRTUAL_HOST}
         networks:
