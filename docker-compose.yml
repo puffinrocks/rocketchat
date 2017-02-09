@@ -3,7 +3,7 @@ version: '2'
 services:
 
     main:
-        image: puffinrocks/rocket.chat:latest
+        image: puffinrocks/rocketchat:latest
         depends_on:
             - db
         ports:
