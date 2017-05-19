@@ -28,7 +28,7 @@ services:
 
     db:
         image: puffinrocks/mongo
-        volumes: 
+        volumes:
             - db_data_db:/data/db
             - db_data_configdb:/data/configdb
 

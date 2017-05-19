@@ -1,4 +1,4 @@
-# Rocket.Chat 
+# Rocket.Chat
 _web chat platform_
 
 [https://rocket.chat/](https://rocket.chat/)
